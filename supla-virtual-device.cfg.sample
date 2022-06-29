@@ -35,16 +35,28 @@ command_template=$value$
 payload_on=1
 payload_off=1
 
+# example of getting payload switch OFF/ON value
+
+[CHANNEL_3]
+function=LIGHTSWITCH
+state_topic=zigbee2mqtt/ZBPA04
+payload_on=ON
+payload_off=OFF
+payload_value=/state
+command_topic=zigbee2mqtt/ZBPA04/set
+command_template_on=ON
+command_template_off=OFF
+
 # example of getting payload dot separated temp and humidity value
 # example 25.4 78
 
-[CHANNEL_3]
+[CHANNEL_4]
 function=TEMPERATURE_AND_HUMIDITY
 state_topic=sensors/temphum/0/state
 
 # example of parsing json payload { "on": true }
 
-[CHANNEL_4]
+[CHANNEL_5]
 function=LIGHTSWITCH
 state_topic=relays/lightbulb/1/state
 command_topic=relays/lightbulb/1/command
@@ -52,7 +64,7 @@ payload_value=/on
 payload_on=true
 payload_off=false
 
-[CHANNEL_5]
+[CHANNEL_6]
 function=WINDSENSOR
 state_topic=sensors/wind/0/state
 

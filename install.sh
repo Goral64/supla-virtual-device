@@ -10,7 +10,7 @@ NC='\033[0m'
 echo "Getting the sources."
 
 if [ ! -d src ]; then
-  git clone https://github.com/lukbek/supla-core.git -q --single-branch --branch supla-mqtt-dev src >/dev/null || exit 1
+  git clone https://github.com/Goral64/supla-core.git -q --single-branch --branch supla-mqtt-dev src >/dev/null || exit 1
 fi
 
 (cd src && git pull >/dev/null && cd ..) || exit 1
