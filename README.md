@@ -239,7 +239,7 @@ supervisorctl tail supla-virtual-device
 # Where are the sources?
 
 If you want to see the sources of this project, check out the
-[`supla-mqtt-dev` branch on mine `supla-core`'s fork](https://github.com/lukbek/supla-core/tree/supla-mqtt-dev).
+[`supla-mqtt-dev` branch on mine `supla-core`'s fork](https://github.com/Goral64/supla-core/tree/supla-mqtt-dev).
 
 # Support
 
