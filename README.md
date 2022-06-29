@@ -37,7 +37,7 @@ and description should help.
 ```
 sudo apt-get update
 sudo apt-get install -y git libssl-dev build-essential curl
-git clone https://github.com/lukbek/supla-virtual-device.git
+git clone https://github.com/Goral64/supla-virtual-device.git
 cd supla-virtual-device
 ./install.sh
 ```
