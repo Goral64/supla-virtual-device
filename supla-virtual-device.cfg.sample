@@ -49,6 +49,8 @@ command_template_off=OFF
 
 # example of getting payload dot separated temp and humidity value
 # example 25.4 78
+# or
+# example {"battery":100,"humidity":50.03,"linkquality":84,"temperature":20.84,"voltage":3100}
 
 [CHANNEL_4]
 function=TEMPERATURE_AND_HUMIDITY

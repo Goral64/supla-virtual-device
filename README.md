@@ -125,6 +125,15 @@ state_topic=sensors/temp/kitchen/state
 - `state_topic`: the exact topic that will be subscribed to by supla-virtual-device
   raw value means that in payload id should be raw single value like 23.5 (dot separated)
 
+```
+[CHANNEL_X]
+function=TEMPERATURE_AND_HUMIDITY
+state_topic=sensors/temp/kitchen/state
+```
+
+- `state_topic`: the exact topic that will be subscribed to by supla-virtual-device
+  raw value means that in payload id should be raw payload dot separated temp and humidity value (25.4 78.5)
+
 # Sensors with data from MQTT (Json)
 
 ```
@@ -136,6 +145,15 @@ payload_value=/data/temp
 
 - `payload_value`: [`JSONPointer`](https://tools.ietf.org/html/rfc6901) to the value in JSON payload
   example above assumes that payload will look like {"data": { "temp": 23.5 } }
+
+```
+[CHANNEL_X]
+function=TEMPERATURE_AND_HUMIDITY
+state_topic=sensors/temp/kitchen/state
+```
+
+- `state_topic`: the exact topic that will be subscribed to by supla-virtual-device
+  value in JSON payload example above assumes that payload will look like {"humidity":50.03,"temperature":20.84[,...]}
 
 # Sensors with multiple data on one topic (Json)
 
